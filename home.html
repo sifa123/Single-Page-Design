@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+	 <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+   
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<link rel="stylesheet" type="text/css" href="home.css">
+
+	
+
+<style>
+   
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;
+background-size: cover;
+}
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 26px;
+  margin-top: -22px;
+  color:red;
+  font-weight: bold;
+  font-size: 28px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 40px;
+  border-radius: 3px 0 0 3px;
+}
+.prev{
+  left: 40px;
+}
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 58px;
+  width: 100%;
+  text-align: center;
+}
+
+
+.animate {
+  -webkit-animation-name: animate;
+  -webkit-animation-duration: 20s;
+  animation-name: animate;
+  animation-duration: 20s;
+}
+.checked {
+  color: orange;
+}
+@-webkit-keyframes animate {
+  from {opacity: .8} 
+  to {opacity: 1}
+}
+
+@keyframes animate{
+  from {opacity: .8} 
+  to {opacity: 1}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+body {
+    font: 400 15px Lato, sans-serif;
+    line-height: 1.8;
+    color: #818181;
+  }
+ 
+ 
+  
+  .panel-footer {
+    background-color: white !important;
+  }
+
+  .panel-footer h3 {
+    font-size: 32px;
+  }
+  .panel-footer h4 {
+    color: #aaa;
+    font-size: 14px;
+  }
+  .panel-footer .btn {
+    margin: 15px 0;
+    background-color: black;
+    color: #fff;
+  }
+  
+  
+  
+  
+  
+  
+  
+  .circle {
+  background: black;
+  border-radius: 50%;
+  margin-left:90px;
+  color:white;
+  height: 9.3em;
+  position:relative;
+  width: 9.3em;
+}
+.circle-content {
+  hyphens: auto;
+  margin: 0.75em;
+  text-align: center;
+  font-size:25px;
+}
+
+
+
+@supports (shape-outside: circle(50%)) {
+  .circle-content {
+    height: 100%;
+    margin: 0;
+  }
+  
+  .circle::before,
+  .circle-content::before {
+    content: "";
+    height: 100%;
+    width: 50%;
+  }
+  
+  .circle::before {
+    float: left;
+    shape-outside: polygon(
+      0 0, 100% 0, 60% 4%, 40% 10%, 20% 20%, 10% 28.2%, 5% 34.4%, 0 50%,
+      5% 65.6%, 10% 71.8%, 20% 80%, 40% 90%, 60% 96%, 100% 100%, 0 100%
+    );
+  }
+  
+  .circle-content::before {
+    float: right;
+    shape-outside: polygon(
+      100% 0, 0 0, 40% 4%, 60% 10%, 80% 20%, 90% 28.2%, 95% 34.4%, 100% 50%,
+      95% 65.6%, 90% 71.8%, 80% 80%, 60% 90%, 40% 96%, 0 100%, 100% 100%
+    );
+  }
+}
+</style>
+
+
+
+</head>
+<body>
+
+  <div class="navbar">
+  <a class="active" href="#"><i class="fa fa-facebook-official" ></i> </a> 
+  <a href="#"><i class="fa fa-twitter"></i> </a> 
+  <a href="#"><i class="fa fa-instagram"></i></a>
+
+  <a href="#" style="float: right;overflow: auto;"><i class="fa fa-envelope">theproject@gmail.com</i></a> 
+  <a href="#" style="float: right;overflow: auto;"><i class="fa fa-phone">+12.......</i></a>
+  </div>
+
+<div class="sifa">
+ <p style="font-family: forte;font-size: 40px;color: black;float: left;margin-left: 20px;">The</p> <p style="font-family: forte;font-size: 40px;color: blue;float: left;margin-left: 10px;">Project</p>
+
+  <a href="#" style="background-color: blue;color: white;"><i class="fa fa-envelope">Contact Us</i></a>
+
+ <div class="Component">
+    <button class="dropbtn">Component
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="Component-content">
+      <a href="#"><i class='fa fa-bar-chart'>Charts</i></a>
+      <a href="#"><i class='fa fa-bars'>Buttons</i></a>
+      <a href="#"><i class="fa fa-home">Home</i></a>
+<a href="#"><i class="fa fa-warning">Alerts</i></a>
+    </div>
+  </div> 
+
+<div class="Features">
+    <button class="dropbtn">Features 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="Features-content">
+      <a href="#">Features 1</a>
+      <a href="#">Features 2</a>
+      <a href="#">Features 3</a>
+       <a href="#">Features 4</a>
+    </div>
+  </div> 
+
+  <div class="Pages">
+    <button class="dropbtn">Pages
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="Pages-content">
+      <a href="#">Page 1</a>
+         <a href="#">Page 2</a>
+            <a href="#">Page 3</a>
+          </div>
+        </div>
+
+      <div class="Home">
+    <button class="dropbtn">Home
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="Home-content">
+      <a href="#">Home 1</a>
+     
+      <a href="#">Home 2</a>
+
+     
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+
+
+
+<div class="wrap">
+  <div id="arrow-left" class="arrow"></div>
+  <div id="slider">
+    <div class="slide slide1">
+      <div class="slide-content">
+        <span style=" background-color: black;
+  padding: 20px;margin-top: 560px;">We offer more possibilities to meet your every need &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="background-color: blue; padding: 20px;margin-top: 560px;">Learn more</span></span>
+
+      </div>
+    </div>
+    <div class="slide slide2">
+      <div class="slide-content">
+        <span style="padding: 20px;margin-bottom: 110px;margin-right: 580px;">Premium HTML<br><span><i class="fa fa-desktop">&nbsp;W3C Validated</i><br>
+          <i class="fa fa-check">&nbsp;After Sale Support</i><br>
+          <i class="fa fa-gift">&nbsp;&nbsp;CrossBrowser</i><br><br><br>
+          <span style="background-color: blue; padding: 10px;margin-right: 100px;"><i class="fa fa-shopping-cart">&nbsp;&nbsp;Purchase</i></span>
+
+        </span></span>
+      </div>
+    </div>
+    
+  </div>
+  <div id="arrow-right" class="arrow"></div>
+</div>
+<br>
+<br>
+
+
+  <img src="section-image-1.png" style="width: 60%;height: 650px;float: left;margin-right: 30px;">
+  <br>
+<h1 style="font-size: 30px;color: black;margin-right:300px;">Core <b>Features</b></h1>
+<br>
+<p style="margin-right: 30px;">Web development is the work involved in developing a Web site for the Internet or an intranet. </p>
+<br>
+ 
+<p style="color: blue;">&nbsp;<span class="glyphicon glyphicon-cog" style="color: blue;font-size: 25px;">Latest Technologies</span></p>
+<br>
+<p>Built with HTML,Cs</p>
+................................................
+<br>
+<p style="color: blue;">&nbsp; <span class="glyphicon glyphicon-wrench" style="color: blue;font-size: 25px;">Dedicated Support</span></p>
+<br>
+<p>Built with HTML,Cs</p>
+................................................
+
+
+<br>
+<p style="color: blue;">&nbsp;<span class="glyphicon glyphicon-star" style="color: blue;font-size: 25px;">valid code</span></p>
+<br>
+<p>Built with HTML,CSS</p>
+................................................
+
+
+
+<br>
+<br>
+<div class="slideshow-container">
+
+<div class="mySlides animate">
+
+  <img src="background-img-5.jpg" style="width: 100%;" >
+  <div class="text"><img src="testimonial-2.jpg" alt="Avatar" style="vertical-align: middle;
+  width: 70px;height: 70px;border-radius: 70%;">
+<h2 >Amazing!</h1><p><b>"Excellent environment, friendly service, great menu choices and really</p></b><p><b>decent food and at affordable prices. Will be back."</p></b><br><p><b>-Sifa</b></p><br><p><b>By Company</b></p>
+</div>
+  
+</div>
+
+
+<div class="mySlides animate">
+
+  <img src="background-img-5.jpg" style="width:100%">
+  <div class="text"><img src="testimonial-1.jpg" alt="Avatar" style="vertical-align: middle;
+  width: 70px;height: 70px;border-radius:70%; ">
+  <h2>Amazing!</h2><p><b>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p></b><p><b>Sed sodales mollis finibus. Praesent rutrum sed odio ut tempor."</p></b><br><p><b>-Maikie</b></p><br><p><b>By Company</b></p>
+    
+  </div>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+
+
+<br>
+<br>
+<img src="section-image-2.png" style="width: 60%;height: 650px;float: right;margin-right: -110px;">
+  <br>
+<h1 style="font-size: 30px;color: black;margin-left:300px;">Simply <b>Amazing</b></h1>
+<br>
+<p style="margin-left: 230px;">Web development is the work involved in developing a Web site for the Internet or an intranet. </p>
+<br>
+<p style="color: blue;margin-left: 230px;">&nbsp;<span class="glyphicon glyphicon-cog" style="color: blue;font-size: 25px;">Latest Technologies</span></p>
+<br>
+<p style="margin-left: 230px;">Built with HTML,Cs</p>
+<p style="margin-left: 230px;">................................................</p>
+<br>
+<p style="color: blue;margin-left: 230px;">&nbsp; <span class="glyphicon glyphicon-wrench" style="color: blue;font-size: 25px;">Dedicated Support</span></p>
+<br>
+<p style="margin-left: 230px;">Built with HTML,Cs</p>
+<p style="margin-left: 230px;">................................................</p>
+
+
+<br>
+<p style="color: blue;margin-left: 230px;">&nbsp;<span class="glyphicon glyphicon-star" style="color: blue;font-size: 25px;">valid code</span></p>
+<br>
+<p style="margin-left: 230px;">Built with HTML,CSS</p>
+
+<p style="margin-left: 230px;">................................................</p>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<h2 style="margin-left: 520px;"><b>Sign Up Now</b></h2>
+<center>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum odio sem, elementum at nulla non, luctus viverra elit.</p><p> Curabitur consectetur nisi ut vulputate dictum. Nunc lobortis nisi risus, eu placerat ligula venenatis in.</p><p> Mauris at fringilla quam. Aenean egestas pellentesque arcu.</p>
+</center>
+
+<!-- Container (Pricing Section) -->
+<!--this code's css file is also written in home.css but it didn't work that's why i have copy in that page -->
+
+<div id="pricing" class="container-fluid">
+  
+  <div class="row slideanim">
+    <div class="col-sm-3 col-xs-12">
+    
+        
+      <div class="panel panel-default text-center">
+     <div class="circle">
+  <p class="circle-content" >
+    Basic<br>
+    Free
+  </p>
+</div>
+         
+          
+        <div class="panel-body">
+          <p><strong>1</strong> User</p>
+          <p><strong>1GB</strong> Storage</p>
+          <p><strong>1</strong> Email Accounts</p>
+          <p> Subdomains</p>
+          <p>Security</p>
+           <p>Bandwidth</p>
+            <p>Databases</p>
+        </div>
+        <div class="panel-footer">
+          <button class="btn btn-lg">Subscribe <span class="glyphicon glyphicon-user"></span></button>
+        </div>
+      </div>      
+    </div>     
+    <div class="col-sm-3 col-xs-12">
+      <div class="panel panel-default text-center">
+        <div class="circle">
+  <p class="circle-content" >
+    Premium<br>
+    $19.99/m
+  </p>
+</div>
+        <div class="panel-body">
+          <p><strong>80</strong> Users</p>
+          <p> Unlimited Disk Space</p>
+          <p>Unlimited Email Accounts</p>
+          <p>Subdomains</p>
+          <p>Security</p>
+            <p><strong>500</strong> Visitors Per Month</p>
+              <p><strong>1</strong> Database</p>
+        </div>
+        <div class="panel-footer">
+         
+          <button class="btn btn-lg">Add to cart<i class="fa fa-shopping-cart"></i></button>
+        </div>
+      </div>      
+    </div>    
+
+ <div class="col-sm-3 col-xs-12">
+      <div class="panel panel-default text-center">
+        <div class="circle" style="background-color: blue;">
+  <p class="circle-content" >
+  Pro<br>
+  $24.99/m
+  </p>
+</div>
+        <div class="panel-body">
+          <p> Unlimited Users</p>
+         <p> Unlimited Disk Space</p>
+          <p> Unlimited Email Accounts</p>
+          <p> Subdomains</p>
+          <p> Security</p>
+            <p> Bandwidth</p>
+            <p> Databases</p>
+        </div>
+        <div class="panel-footer">
+          <button class="btn btn-lg">Add to cart<i class="fa fa-shopping-cart"></i></button>
+        </div>
+      </div>      
+    </div>       
+
+
+    <div class="col-sm-3 col-xs-12">
+      <div class="panel panel-default text-center">
+        <div class="circle">
+  <p class="circle-content" >
+   Ultimate<br>
+    $45.99/m
+  
+  </p>
+</div>
+        <div class="panel-body">
+          <p>Unlimited Users</p>
+         <p> Unlimited Disk Space</p>
+          <p> Unlimited Email Accounts</p>
+          <p> Subdomains</p>
+          <p> Security</p>
+            <p> Bandwidth</p>
+            <p> Databases</p>
+        </div>
+        <div class="panel-footer">
+          <button class="btn btn-lg">Add to cart<i class="fa fa-shopping-cart"></i></button>
+        </div>
+      </div>      
+    </div>    
+  </div>
+</div>
+
+<br>
+<br>
+<div class="topnav2">
+  <a href="#" ><h2>We offer more possibilities to meet your every need</h2> </a>  <button class="btn btn-lg" style="background-color: black;color: white;border-color: white;margin-bottom: -70px;margin-left: 460px;">Purchase<i class="fa fa-shopping-cart"></i></button></div>
+
+ <br>
+ <br>
+ <center>
+    <p style="font-family: forte;font-size: 40px;color: black;margin-right: 150px;">The</p><p style="font-family: forte;font-size: 40px;color: blue;margin-left: 50px;margin-top: -80px;">Project</p>
+    
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum odio sem, elementum at nulla non, luctus viverra elit.</p><p> Curabitur consectetur nisi ut vulputate dictum. Nunc lobortis nisi risus, eu placerat ligula venenatis in.</p><p> Mauris at fringilla quam. Aenean egestas pellentesque arcu.</p>
+
+    <i class="fa fa-map-marker" style="font-size:25px;color:blue;">Dhaka,Bangladesh</i>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<i class="fa fa-phone" style="font-size:25px;color:blue">+8801.........</i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+<i class="fa fa-envelope" style="font-size:25px;color:blue">s********@gmail.com</i>
+ </center>
+ <br><br>
+ <center>
+ <div class="footer-social-icons">
+ 
+     <a href="#"><i class="fa fa-facebook-official" style="font-size: 30px;"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <a href="#"><i class="fa fa-twitter" style="font-size: 30px;"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <a href="#"><i class="fa fa-instagram" style="font-size: 30px;"></i></a>
+   
+  </div>
+</center>
+
+
+
+
+
+
+<script>//first slide's js code starts from here
+  let sliderImages = document.querySelectorAll(".slide"),
+  arrowLeft = document.querySelector("#arrow-left"),
+  arrowRight = document.querySelector("#arrow-right"),
+  current = 0;
+
+// Clear all images
+function reset() {
+  for (let i = 0; i < sliderImages.length; i++) {
+    sliderImages[i].style.display = "none";
+  }
+}
+
+// Init slider
+function startSlide() {
+  reset();
+  sliderImages[0].style.display = "block";
+}
+
+// Show prev
+function slideLeft() {
+  reset();
+  sliderImages[current - 1].style.display = "block";
+  current--;
+}
+
+// Show next
+function slideRight() {
+  reset();
+  sliderImages[current + 1].style.display = "block";
+  current++;
+}
+
+
+arrowLeft.addEventListener("click", function() {
+  if (current === 0) {
+    current = sliderImages.length;
+  }
+  slideLeft();
+});
+
+
+arrowRight.addEventListener("click", function() {
+  if (current === sliderImages.length - 1) {
+    current = -1;
+  }
+  slideRight();
+});
+
+startSlide();
+</script>
+
+
+
+
+
+
+<script>//starting js code for testimonial
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+<script>
+
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 3000);   
+  
+}
+</script>
+
+
+  
+</body>
+</html>

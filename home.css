@@ -1,0 +1,518 @@
+
+*{
+  margin: 0px;
+  padding: 0px;
+  
+}
+
+
+.navbar {
+  width: 100%;
+  background-color: black;
+  overflow: auto;
+}
+
+.navbar a {
+  float: left;
+  padding: 12px;
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navbar a:hover {
+  background-color: blue;
+}
+
+
+
+
+
+
+
+
+.sifa {
+  overflow: hidden;
+  background-color: white;
+ 
+}
+
+.sifa a {
+ 
+  float: right;
+  font-size: 16px;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+
+
+
+
+
+
+
+.Component{
+  float: right;
+  overflow: hidden;
+}
+
+.Component .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: black;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.sifa a:hover,
+ .Component:hover .dropbtn {
+  background-color: white;
+  color: blue;
+}
+.Component-content {
+  display: none;
+  position: absolute;
+ 
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.Component-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  background-color: white;
+  display: block;
+  text-align: left;
+}
+
+.Component-content a:hover {
+  background-color: white;
+  color: blue;
+}
+
+.Component:hover .Component-content {
+  display: block;
+}
+
+
+.Features{
+  float: right;
+  overflow: hidden;
+}
+
+.Features .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: black;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.sifa a:hover,
+ .Features:hover .dropbtn {
+  background-color: white;
+  color: blue;
+}
+.Features-content {
+  display: none;
+  position: absolute;
+ 
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.Features-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+   background-color: white;
+  display: block;
+  text-align: left;
+}
+
+.Features-content a:hover {
+  background-color: white;
+}
+
+.Features:hover .Features-content {
+  display: block;
+}
+
+
+
+.Pages {
+  float: right;
+  overflow: hidden;
+}
+
+.Pages .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: black;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.sifa a:hover,
+ .Pages:hover .dropbtn {
+  background-color: white;
+  color: blue;
+}
+.Pages-content {
+  display: none;
+  position: absolute;
+ 
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.Pages-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+   background-color: white;
+  display: block;
+  text-align: left;
+}
+
+.Pages-content a:hover {
+  background-color: white;
+}
+
+.Pages:hover .Pages-content {
+  display: block;
+}
+
+
+.Home {
+  float: right;
+  overflow: hidden;
+}
+
+.Home .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: black;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.sifa a:hover,
+ .Home:hover .dropbtn {
+ color: blue;
+}
+.Home-content {
+  display: none;
+  position: absolute;
+  
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.Home-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+   background-color: white;
+  display: block;
+  text-align: left;
+}
+
+.Home-content a:hover {
+background-color: white;
+}
+
+.Home:hover .Home-content {
+  display: block;
+}
+
+
+
+
+
+
+
+
+
+body,
+#slider,
+.wrap,
+.slide-content {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 100%;
+  height: 100vh;
+  overflow-x: hidden;
+}
+
+.wrap {
+  position: relative;
+}
+
+.slide {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.slide1 {
+  background-image: url("pic 1.jpg");
+}
+.slide2 {
+  background-image: url("pic 1.jpg");
+}
+.slide3 {
+  background-image: url("background-img-4.jpg");
+}
+
+.slide-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.slide-content span {
+  
+ 
+  font-size: 30px;
+  color: #fff;
+}
+
+.arrow {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  margin-top: -35px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+}
+
+#arrow-left {
+  border-width: 20px;
+  border-color: transparent #fff transparent transparent;
+  left: 0;
+  margin-left: 30px;
+}
+
+#arrow-right {
+  border-width: 20px;
+  border-color: transparent transparent transparent #fff;
+  right: 0;
+  margin-right: 30px;
+}
+
+
+
+
+
+ 
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;
+background-size: cover;
+}
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 26px;
+  margin-top: -22px;
+  color:red;
+  font-weight: bold;
+  font-size: 28px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 40px;
+  border-radius: 3px 0 0 3px;
+}
+.prev{
+  left: 40px;
+}
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 58px;
+  width: 100%;
+  text-align: center;
+}
+
+
+.animate {
+  -webkit-animation-name: animate;
+  -webkit-animation-duration: 20s;
+  animation-name: animate;
+  animation-duration: 20s;
+}
+.checked {
+  color: orange;
+}
+@-webkit-keyframes animate {
+  from {opacity: .8} 
+  to {opacity: 1}
+}
+
+@keyframes animate{
+  from {opacity: .8} 
+  to {opacity: 1}
+}
+
+
+
+
+
+
+ body {
+    font: 400 15px Lato, sans-serif;
+    line-height: 1.8;
+    color: #818181;
+  }
+ 
+ 
+  
+  .panel-footer {
+    background-color: white !important;
+  }
+
+  .panel-footer h3 {
+    font-size: 32px;
+  }
+  .panel-footer h4 {
+    color: #aaa;
+    font-size: 14px;
+  }
+  .panel-footer .btn {
+    margin: 15px 0;
+    background-color: black;
+    color: #fff;
+  }
+  
+  
+  
+  
+  
+  
+  
+  .circle {
+  background: black;
+  border-radius: 50%;
+  margin-left:90px;
+  color:white;
+  height: 9.3em;
+  position:relative;
+  width: 9.3em;
+}
+.circle-content {
+  hyphens: auto;
+  margin: 0.75em;
+  text-align: center;
+  font-size:25px;
+}
+
+
+
+@supports (shape-outside: circle(50%)) {
+  .circle-content {
+    height: 100%;
+    margin: 0;
+  }
+  
+  .circle::before,
+  .circle-content::before {
+    content: "";
+    height: 100%;
+    width: 50%;
+  }
+  
+  .circle::before {
+    float: left;
+    shape-outside: polygon(
+      0 0, 100% 0, 60% 4%, 40% 10%, 20% 20%, 10% 28.2%, 5% 34.4%, 0 50%,
+      5% 65.6%, 10% 71.8%, 20% 80%, 40% 90%, 60% 96%, 100% 100%, 0 100%
+    );
+  }
+  
+  .circle-content::before {
+    float: right;
+    shape-outside: polygon(
+      100% 0, 0 0, 40% 4%, 60% 10%, 80% 20%, 90% 28.2%, 95% 34.4%, 100% 50%,
+      95% 65.6%, 90% 71.8%, 80% 80%, 60% 90%, 40% 96%, 0 100%, 100% 100%
+    );
+  }
+}
+  
+
+
+
+
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav2 {
+  overflow: hidden;
+  background-color: black;
+}
+
+.topnav2 a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  
+}
+
+
+
+
+
+
+
